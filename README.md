@@ -23,33 +23,6 @@ Tech Stack
 - Scikit-learn
 - Plotly
 
-Project Structure
-
-DataGenome/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-├── utils/
-│   └── genome_analyzer.py
-│
-└── screenshots/
-Installation
-
-Clone the repository:
-
-bash
-git clone https://github.com/PoojaSiv0211/DataGenome.git
-cd DataGenome
-
-
-Create and activate virtual environment:
-
-
-python -m venv venv
-venv\Scripts\activate
 
 
 Install dependencies:
