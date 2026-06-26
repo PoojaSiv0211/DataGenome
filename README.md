@@ -1,80 +1,223 @@
-DataGenome 
+# DataGenome
 
-DataGenome is an interactive data analysis tool that visualizes the hidden structure of dataset features.
+AI-powered exploratory data analysis platform for discovering hidden relationships between dataset features using correlation analysis, PCA-based 3D visualization, clustering, and automated dataset reports.
 
-It combines correlation analysis, 3D feature embedding, clustering, and automatic reporting to help users understand how variables behave and relate to each other.
+---
 
-Features
+# Overview
 
-- Upload any CSV dataset
-- Preview dataset instantly
-- Generate feature correlation heatmap
-- Build a 3D genome map of numeric features using PCA
-- Automatically cluster similar features using KMeans
-- Generate an auto dataset report
-- Summarize dataset size and numeric feature count
+DataGenome is an interactive data analysis tool that helps users understand the hidden structure of datasets through visual analytics.
 
-Tech Stack
+Instead of manually inspecting spreadsheets, users can upload a CSV dataset and instantly explore feature relationships, correlation patterns, 3D feature embeddings, clustering results, and automatically generated insights.
 
-- Python
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-learn
-- Plotly
+---
 
+# Problem
 
+Understanding relationships between variables in large datasets can be difficult using traditional spreadsheets. Hidden correlations, similar feature groups, and overall dataset structure are often overlooked during exploratory data analysis.
 
-Install dependencies:
+---
 
+# Solution
+
+DataGenome automates exploratory data analysis by combining statistical correlation analysis, Principal Component Analysis (PCA), feature clustering, and interactive visualizations into a single application.
+
+It transforms raw datasets into intuitive visual insights that make feature exploration faster and more interpretable.
+
+---
+
+# Features
+
+- Upload CSV datasets
+- Instant dataset preview
+- Correlation heatmap visualization
+- PCA-powered 3D feature genome map
+- Automatic feature clustering using KMeans
+- Auto-generated dataset report
+- Dataset summary statistics
+- Interactive Plotly visualizations
+
+---
+
+# Architecture
+
+```text
+CSV Dataset
+      │
+      ▼
+Dataset Loader
+      │
+      ▼
+Preprocessing
+      │
+ ┌────┴───────────┐
+ │                │
+ ▼                ▼
+Correlation     PCA Projection
+Analysis
+ │                │
+ ▼                ▼
+Heatmap      3D Genome Map
+ │                │
+ └──────┬─────────┘
+        ▼
+ Feature Clustering
+ (KMeans)
+        ▼
+ Auto Dataset Report
+```
+
+---
+
+# Technology Stack
+
+| Layer | Technology |
+|-------|------------|
+| Language | Python |
+| Framework | Streamlit |
+| Data Processing | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Visualization | Plotly |
+
+---
+
+# Project Workflow
+
+```
+Upload CSV Dataset
+        ↓
+Preview Dataset
+        ↓
+Correlation Analysis
+        ↓
+PCA-based 3D Visualization
+        ↓
+Feature Clustering
+        ↓
+Automatic Dataset Report
+```
+
+---
+
+# Screenshots
+
+## Dataset Upload & Preview
+
+Quickly upload any CSV dataset and inspect its contents before analysis.
+
+![Dataset Preview](screenshots/preview.png)
+
+---
+
+## Correlation Heatmap
+
+Visualize relationships between numerical features using a color-coded correlation matrix.
+
+![Correlation Heatmap](screenshots/heatmap.png)
+
+---
+
+## 3D Genome Map
+
+Project numerical features into a PCA-powered three-dimensional space to reveal structural similarity between variables.
+
+![3D Genome Map](screenshots/genome3d.png)
+
+---
+
+## Automatic Dataset Report
+
+Generate an AI-style summary describing important relationships, feature statistics, and overall dataset characteristics.
+
+![Dataset Report](screenshots/report.png)
+
+---
+
+# Example Output
+
+DataGenome automatically identifies:
+
+- Strong positive correlations
+- Strong negative correlations
+- Similar feature clusters
+- PCA-based feature positioning
+- Dataset statistics
+- Automatic textual interpretation of dataset structure
+
+---
+
+# Use Cases
+
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Dataset understanding
+- Machine learning preprocessing
+- Educational demonstrations
+- Mini project presentations
+- Research visualization
+
+---
+
+# Project Structure
+
+```text
+DataGenome/
+│
+├── app.py
+├── requirements.txt
+├── screenshots/
+│   ├── preview.png
+│   ├── heatmap.png
+│   ├── genome3d.png
+│   └── report.png
+├── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/PoojaSiv0211/DataGenome.git
+```
+
+Move into the project
+
+```bash
+cd DataGenome
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+Run the application
 
-Run the application:
-
+```bash
 streamlit run app.py
+```
 
+---
 
-Example Workflow
+# Future Improvements
 
-1. Upload a CSV dataset
-2. Inspect the dataset preview
-3. Analyze feature correlation
-4. Visualize the 3D genome map
-5. Review feature clusters
-6. Read the auto-generated dataset report
+- t-SNE and UMAP visualizations
+- AI-generated feature explanations
+- Feature importance ranking
+- Dataset comparison mode
+- Downloadable PDF reports
+- Interactive filtering options
 
-Example Output
+---
 
-The system identifies:
+# Author
 
-- strongest positive and negative correlations
-- clusters of related features
-- 3D placement of variables based on similarity
-- automatic textual interpretation of dataset structure
+**Pooja Sivaramalingam**
 
-Use Cases
+AI & Data Science Undergraduate
 
-- exploratory data analysis
-- feature relationship discovery
-- educational demonstrations
-- mini project presentations
-- dataset structure visualization
-
-Screenshots
-
-Dataset Preview
-![Preview](screenshots/preview.png)
-
-Correlation Heatmap
-![Heatmap](screenshots/heatmap.png)
-
-3D Genome Map
-![Genome Map](screenshots/genome3d.png)
-
-Auto Dataset Report
-![Report](screenshots/report.png)
-
-Author:
-Pooja Sivaramalingam  
-AI & Data Science Student
+Building AI-powered tools for data visualization, healthcare, and knowledge systems.
