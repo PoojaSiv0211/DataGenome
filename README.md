@@ -1,4 +1,17 @@
 # DataGenome
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+</p>
+
+<p align="center">
+  <img src="screenshots/hero.png" width="900"/>
+</p>
 
 AI-powered exploratory data analysis platform for discovering hidden relationships between dataset features using correlation analysis, PCA-based 3D visualization, clustering, and automated dataset reports.
 
